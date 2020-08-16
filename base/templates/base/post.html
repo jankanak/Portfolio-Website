@@ -1,0 +1,10 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+<div class="main-container">
+    <img style="width: 600px; width: 400px;" src="{{ post.thumbnail.url }}">
+    <h1>{{ post.headline }}</h1>
+    <h4>{{ post.sub_headline }}</h4>
+    <p>{{ post.body|safe }} </p>
+</div>
+{% endblock %}
