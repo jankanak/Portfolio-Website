@@ -11,9 +11,10 @@ class Tag(models.Model):
 
 class Post(models.Model):
     headline=models.CharField(max_length=200)
-    sub_headline=models.CharField(max_length=200,blank=True,null=True)
-    thumbnail=models.ImageField(null=True,blank=True,upload_to="images")
+    sub_headline=RichTextUploadingField(blank=True,null=True)
+    thumbnail=models.ImageField(null=True,blank=True)
     body=RichTextUploadingField(blank=True,null=True)
+    more_images=models.TextField(blank=True,null=True)
     created=models.DateTimeField(auto_now_add=True)
     active=models.BooleanField(default=False)
     featured=models.BooleanField(default=False)

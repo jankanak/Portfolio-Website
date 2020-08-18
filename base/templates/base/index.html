@@ -25,7 +25,8 @@
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
-				<h1>Hi, I'm Kanak Hassan</h1>
+				<h1>Hi, I'm Md. Kamruzzaman
+				</h1>
 			</div>
 
 
@@ -120,16 +121,16 @@
 							<li>Python</li>
 							<li>Django</li>
 							<li>JavaScript</li>
-							<li>React</li>
-							<li>Postgres</li>
+							<li>Bootstrap</li>
+							<li>Pandas</li>
 						</ul>
 
 						<ul>
-							<li>Google Maps API</li>
-							<li>JS Charts</li>
-							<li>AWS (RDS/S3)</li>
-							<li>Heroku</li>
-							<li>HTML/CSS</li>
+							<li>R</li>
+							<li>Git and GitHub</li>
+							<li>Docker</li>
+							<li>Selenium</li>
+							<li>BeautifulSoup</li>
 						</ul>
 
 					</div>
@@ -174,8 +175,8 @@
 					<div class="post">
 						<img class="thumbnail" src="{{ post.thumbnail.url }}">
 						<div class="post-preview">
-							<h6 class="post-title">{{ post.headline }}</h6>
-							<p class="post-intro">{{ post.sub_headline }}</p>
+							<h5 class="post-title">{{ post.headline }}</h5>
+							<p class="post-intro">{{ post.sub_headline|safe }}</p>
 							{% for tag in post.tags.all %}
 							<span class="tag" style="background-color: black; font-size: 15px;padding: 2px 5px; border-radius: 5px;">{{ tag }}</span>
 							{% endfor %}
@@ -191,35 +192,124 @@
 
 			<p align="center">
 				<a href="{% url 'posts' %}">View More </a>
+				
 			</p>
 		</div>
 	</section>
 
 	<section class="s2">
 		<div class="main-container">
-			<a href=""></a>
-			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
-				<a name="contact"></a>
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>Experiences</h4>
+					<table style="width: 500px;font-family:Arial, Helvetica, sans-serif;font-size: 17px;padding-top: 10px; padding-bottom:10px;padding-left:10px;background-color: var(--previewShadow);">
+							
+						<tr>
+							<td><strong style="padding-right: 10px;">Institute</strong>  </td>
+							<td>Pabna Engineering College, Pabna, Bangladesh.  </td>				
+						</tr>
+						<tr>
+							<td><strong>Position</strong>	 </td>
+							
+							<td>Lecturer</td>
+				
+						</tr>
+						<tr>
+							<td><strong>Duration</strong></td>
+							<td>September, 2019 ~ Now</td>
+						</tr>
+						
 
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+						</table>
+						<h4>REFERENCES 
+						</h4>
+						<p style= "padding-left:5px;padding-top:5px;color:black;width: 500px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 17px;padding-top: 10px; padding-bottom:10px;padding-left:10px;background-color: var(--previewShadow);">
+							Md. Mahmudul Hasan <br>
+							Assistant Professor<br>
+							Department of Computer Science and Engineering<br>
+							Pabna University of Science & Technology.<br>
+							Mobile: 01722044641 <br>
+						</p>
 
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
 
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				</div>
 
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<div class="about-me">
+					<h4> EDUCATIONAL QUALIFICATIONS 	</h4>
+					<div class="bsc" style="padding-top: 0%;">
+						<h5>Bachelor of Science (BSC) </h5>	
+						<div style="padding-top: 5px; padding-bottom:5px;padding-left:5px;background-color: var(--previewShadow);">
+							<table style="width:130%;font-size: 120%;">
+						
+								<tr>
+									<td><b>University</b> </td>
+									<td> Pabna University of Science and Technology  </td>				
+								</tr>
+								<tr>
+									<td><b>Department </b> </td>
+									<td>Computer Science & Engineering </td>
+						
+								</tr>
+								<tr>
+									<td><b>Result</b> </td>
+									<td>GPA 3.44 (in scale of 4) </td>
+								</tr>
+								
+		
+							</table>
+						</div>
+				
+					</div>
+					<div class="bsc" >
+						<h5>Higher Secondary Certificate (HSC) </h5>	
+						<div style="padding-top: 5px; padding-bottom:5px;padding-left:5px;background-color: var(--previewShadow);">
 
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
+							<table style="width:130%;font-size: 120%;">
+						
+								<tr>
+									<td><b>College </b> </td>
+									<td>Govt. Shaheed Bulbul College,Pabna.  </td>				
+								</tr>
+								<tr>
+									<td><b>Result  </b> </td>
+									<td> GPA 5.00 (in scale of 5)</td>
+						
+								</tr>
+							
+		
+							</table>
+						</div>
+			
+					</div>
+					<div class="bsc">
+						<h5>Secondary School Certificate (SSC)  </h5>	
+						<div  style="padding-top: 5px; padding-bottom:5px;padding-left:5px;background-color: var(--previewShadow);">
+							<table style="width:130%;font-size: 120%;">
+						
+								<tr>
+									<td ><b>School  </b> </td>
+									<td>Khatib Abdul Zahid High School & College.  </td>				
+								</tr>
+								<tr>
+									<td><b>Result  </b> </td>
+									<td> GPA 5.00 (in scale of 5)</td>
+						
+						
+								</tr>
+							
+		
+							</table>
+						</div>
+				
+					</div>
+					
+					
+				</div>
+			</div>
+
 		</div>
-	</section> 
-
+	</section>
 
 
 
