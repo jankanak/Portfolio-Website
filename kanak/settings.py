@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7o$of5jn2^rp5o_mt$-d0z^*@!#v--7blx-2*k+y*ankkoksxo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kanakportfolio.herokuapp.com']
 
 # Application definition
 TINYMCE_DEFAULT_CONFIG = {
