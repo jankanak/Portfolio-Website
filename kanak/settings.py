@@ -25,7 +25,7 @@ SECRET_KEY = '7o$of5jn2^rp5o_mt$-d0z^*@!#v--7blx-2*k+y*ankkoksxo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['kanakportfolio.herokuapp.com']
+ALLOWED_HOSTS = ['portfoliokanak.herokuapp.com']
 
 # Application definition
 TINYMCE_DEFAULT_CONFIG = {
